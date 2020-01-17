@@ -40,7 +40,7 @@ for($i = 0; $i < $countTests; $i++) {
         die();
     }
 
-    if(!preg_match("/^W[WLR]*W\sW[WLR]*W$/", $stepsTrack)) {
+    if(!preg_match("/^W[WLR]*W\sW[WLR]*W$/", trim($stepsTrack))) {
         echo "$title: Все пути должны состоять как минимум из двух символов, содержать только символы 'W', 'L', 'R', начинаться и заканчиваться символом 'W'";
         die();
     }
